@@ -15,6 +15,11 @@ public class MemberController {
 		@Autowired
 		private MemberService memberService;
 	
+		@GetMapping("memberLogin")
+		public void getMemberLogin() throws Exception{
+			
+		}
+		
 		@PostMapping("memberLogin")
 		public ModelAndView getMemberLogin(MemberVO memberVO, HttpSession session) throws Exception{
 			ModelAndView mv = new ModelAndView();

@@ -22,7 +22,11 @@
 						<input type="checkbox" value="로그인 상태 유지">
 					</td>
 				</tr>
-
+				<tr>
+					<td>
+						<input type="submit" value="로그인">
+					</td>
+				</tr>
 				
 			</table>
 	

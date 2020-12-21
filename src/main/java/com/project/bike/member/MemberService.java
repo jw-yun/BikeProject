@@ -14,4 +14,9 @@ public class MemberService {
 		return memberMapper.getMemberLogin(memberVO);
 	}
 	
+	public int setMemberJoin(MemberVO memberVO) throws Exception{
+		
+		return memberMapper.setMemberJoin(memberVO);
+	}
+	
 }

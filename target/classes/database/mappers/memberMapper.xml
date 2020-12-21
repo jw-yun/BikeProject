@@ -8,7 +8,10 @@
 		select * from MEMBER where id=#{id} and pw=#{pw}
 	</select>
 	
-
+	<insert id="setMemberJoin" parameterType="MemberVO">
+		insert into MEMBER(id, pw, name, addr1, addr2, addr3, phone, auth, pass, regDate)
+		values(#{id}, #{pw}, #{name}, #{addr1}, #{addr2}, #{addr3}, #{phone}, 0, "", sysdate())
+	</insert>
 
 
 </mapper>
