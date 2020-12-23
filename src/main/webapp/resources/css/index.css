@@ -1,0 +1,119 @@
+@charset "UTF-8";
+	#main_choice{
+		background: #EFEFEF;
+		width: 100%;
+		height: 125px;
+	}
+	.mainTap{
+	font-size: 24px;
+	font-weight: normal;
+	color: #333333;
+	padding-top:30px;
+	}
+	.mainTap a:hover{
+		color: #77ECCA;
+		background-color: #77ECCA;
+	}
+	
+	.mt1 a{
+		background: url("../images/main/mainTab_1.gif") center no-repeat;
+		display: block;
+		cursor:pointer;
+		width:200px;
+		height: 65px;
+		line-height: 65px;
+		text-align: center;
+		padding-left: 30px;
+	border-right: #D0D0D0 solid thin;
+	}	
+	.mt2 a{
+		background: url("../images/main/mainTab_2.gif") center no-repeat;
+		display: block;
+		cursor:pointer;
+		width:265px;
+		height: 65px;
+		line-height: 65px;
+		padding-left: 30px;
+		text-align: center;
+	border-right: #D0D0D0 solid thin;
+	}	
+	.mt3 a{
+		background: url("../images/main/mainTab_3.gif") ;
+		display: block;
+		cursor:pointer;
+		width:265px;
+		height: 65px;
+		padding-left: 10px;
+		line-height: 65px;
+		text-align: center;
+	border-right: #D0D0D0 solid thin;
+	}	
+	.mt4 a{
+		background: url("../images/main/mainTab_4.gif");
+		display: block;
+		cursor:pointer;
+		width:265px;
+		height: 65px;
+		line-height: 65px;
+		padding-left: 10px;
+		text-align: center;
+	}	
+	.bn{
+		height: 300px;
+		width: 50%;
+
+
+	}
+	.bn_1{
+		background-image:url("../images/main/bn1.jpg"); 
+		float: left;
+	}
+	.bn_2{
+		background-image:url("../images/main/bn2.jpg"); 
+		float: left;
+	}
+	.bn_3{
+		background-image:url("../images/main/bn3.jpg"); 
+		float: left;
+	}
+	.bn_4{
+		background-image:url("../images/main/bn4.jpg"); 
+		float: left;
+	}
+	.bn_5{
+		background-image:url("../images/main/bn5.jpg"); 
+		float: left;
+	}
+	.bn_6{
+		background-image:url("../images/main/bn6.jpg"); 
+		float: left;
+	}
+	.bn p{
+		font-size: 24px;
+	}
+	.text{
+		width : 235px;
+		height : 70px;
+		position:relative;
+		color:#FFFFFF;
+		top: 35px;
+	}
+	.bn span{
+		font-size: 14px;
+		
+	}
+	.tbn_1{
+		letter-spacing: -0.075em;
+		text-align: left;
+		right: -50%;
+	}
+	.tbn_4{
+		left : 15%;
+		text-align: right;
+	}
+	#main_info{
+		height: 520px;
+		width: 100%;
+		background-color:yellow; 
+		border: black 1px solid;
+	}

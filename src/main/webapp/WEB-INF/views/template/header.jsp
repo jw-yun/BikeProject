@@ -1,67 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <head>
-<style type="text/css">
-#header{
-	margin : 0 auto;
-	padding-bottom: 5px;
-}
-#header_2{
-	margin : 0 auto;
-}
-.top{
-	height: 50px; width :20%
-}
-.top1{
-	float: left;
-}
-.top2{
-	float: right;
-}
-ul{
-	padding: 0px;
-	text-align: center;
-}
-li{
-	list-style: none;
-	display: inline-block;
-}
-.li_text{
-	font-size: 12px;
-}
-.li_lang{
-	float:left;
-	padding-top:17px;
-	padding-right: 10px;
-}
-.log{
-	font-weight: bold;
-}
-#logo_img{
-	padding-top:15px;
-	width:160px;
-	height:40px;
-}
-.log_menu{
-	padding-left: 3px;
-	padding-top:17px;
-}
-#header_menu{
-	width:760px;
-	height:55px;
-	float:right;
-}
-.head_menu{
-	padding-left: 50px;
-	padding-top: 25px;
-}
-.limenu{
-	font-size: 16px;
-	font-weight: bold;
-	
-}
-
-
-</style>
+<link href="./resources/css/header.css" rel="stylesheet" type="text/css">
 </head>
 
  <!-- Header -->
