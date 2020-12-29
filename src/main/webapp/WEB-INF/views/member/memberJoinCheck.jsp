@@ -15,10 +15,9 @@
 		margin: 70px 0px;
 	}
 	.join_btn{
-		margin: 0 auto;
 	}
 	.join_ul{
-		text-align: center;
+		margin : 0 auto;
 		width: 270px;
 		height: 256px;
 	}
@@ -29,7 +28,6 @@
 	.join_general a{
 		color:#FFFFFF;
 		background: url("../resources/images/main/ic_join.png") left 14px center no-repeat;
-		text-align: center;
 		line-height: 43px;
 	    text-align: center;
 	    display: inline-block;
@@ -40,6 +38,9 @@
 	    font-size: 12px;
 	    border-radius: 3px;
 	}	
+	.join_line{
+		margin: 5px 0px 30px 0px;
+	}
 </style>
 </head>
 
@@ -50,9 +51,9 @@
 	<div class="join_btn">
 		<ul class="join_ul">
 			<li class="join_general">
-				<a href="">일반회원으로 가입</a>
+				<a href="${pageContext.request.contextPath}/member/memberCertify">일반회원으로 가입</a>
 			</li>
-			<li><img src="${pageContext.request.contextPath}/resources/images/main/join_line.jpg"></li>
+			<li class="join_line"><img src="${pageContext.request.contextPath}/resources/images/main/join_line.jpg"></li>
 			
 		
 		</ul>
