@@ -1,33 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <head>
-<link href="./resources/css/header.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet" type="text/css" >
+<link href="${pageContext.request.contextPath}/resources/css/header.css" rel="stylesheet" type="text/css">
 </head>
 
  <!-- Header -->
 <header>
 	<div id="header_wrap" style="height: 130px; width :100%">
-		<div id="header" style="height: 50px; width :79%">
-			<div class="top top1">
-				<ul>
-					<li class="li_lang"><a href="#" class="li_text">ENGLISH</a></li>
-					<li class="li_lang"><a href="#" class="li_text">中國語</a></li>
-					<li class="li_lang"><a href="#" class="li_text">日本語</a></li>
-					<li class="li_lang"><a href="#" class="li_text">한국어</a></li>
-				</ul>
-			</div>
-			
-			<div class="top top2">
-				<ul style="text-align: right;">
-					<li class="log_menu"><a href="#" class="li_text log">로그인</a></li>
-					<li class="log_menu"><a href="#" class="li_text log">회원가입</a></li>
-					<li class="log_menu"><a href="#" class="li_text">알림</a></li>
-					<li class="log_menu"><a href="#" class="li_text">이용안내</a></li>
-				</ul>
-			</div>
-			
-					
+		<div style="border-bottom: 1px solid #E5E5E5">
+			<div id="header" style="height: 50px; width :79%">
+				<div class="top top1">
+					<ul class="">
+						<li class="li_lang"><a href="#" class="li_text">ENGLISH</a></li>
+						<li class="li_lang"><a href="#" class="li_text">中國語</a></li>
+						<li class="li_lang"><a href="#" class="li_text">日本語</a></li>
+						<li class="li_lang"><a href="#" class="li_text">한국어</a></li>
+					</ul>
+				</div>
+				
+				<div class="top top2">
+					<ul style="text-align: right;">
+						<li class="log_menu"><a href="#" class="li_text log">로그인</a></li>
+						<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberJoinCheck" class="li_text log">회원가입</a></li>
+						<li class="log_menu"><a href="#" class="li_text">알림</a></li>
+						<li class="log_menu"><a href="#" class="li_text">이용안내</a></li>
+					</ul>
+				</div>
+			</div>	
 		</div>
-		<hr style="margin: 0px;">
 		
 		
 		<div id="header_2" style="height: 75px; width :79%">
@@ -47,6 +47,7 @@
 		</div>
 	</div>    
 </header>
+<hr style="border:solid 1px #77ECCA">
    
    
    

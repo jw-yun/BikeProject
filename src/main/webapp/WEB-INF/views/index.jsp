@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-<link href="./resources/css/common.css" rel="stylesheet" type="text/css" >
+<link href="./resources/css/common.css" rel="stylesheet" type="text/css">
 <link href="./resources/css/index.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -11,7 +11,7 @@
 
 <body>
 	<c:import url="./template/header.jsp"></c:import>
-	<hr style="border:solid 1px #77ECCA">
+
 	<img alt="" src="${pageContext.request.contextPath}/resources/images/main/main_img.png" style="width: 100%">
 	<div id="main_choice">
 		<ul style="width: 95%; margin : 0 auto; padding-left: 130px;" >
@@ -54,6 +54,7 @@
 			<li class="bn bn_6"></li>
 		</ul>
 	</div>
+
 
 	<div id="main_info">
 		<h2>대여소 안내</h2>

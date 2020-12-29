@@ -1,0 +1,66 @@
+@charset "UTF-8";
+	.footer_border{
+		width:100%;
+		height:155px;
+		border-top: #E5E5E5 1px solid;
+	}
+	.footer_border p{
+		font-size : 11px;
+	}
+	.dl{
+	float:right;
+	border-left : 1px solid #dfdfdf;
+	width: 180px;
+	padding: 20px 0px;
+	}
+	dt{
+	float:left;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-left: 12px;
+	}
+	ul{
+	text-align: left;
+	padding-bottom: 30px;
+	}
+	li{
+	font-size: 12px;
+	font-weight: bold;
+	}
+	dd{
+	cursor: pointer;
+	}
+	.bd{
+	border-right-color:#D0D0D0;
+	border-right-width:thin;
+	border-right-style:solid;
+	padding-right: 15px;
+	}
+	.bd1{
+	color:#FE4F6C;
+	}
+	.bdd{
+	padding-left: 15px;
+	}
+	.faceLink{
+		background-image: url("../images/main/facebookLink.png");
+		width: 28px;
+		height: 28px;
+		float:left;
+		margin-left: 12px;
+	}
+	.instaLink{
+		background-image: url("../images/main/instaLink.png");
+		width: 28px;
+		height: 28px;
+		float:left;
+		margin-left:12px;
+	}
+	.blogLink{
+		background-image: url("../images/main/naverblogLink.png");
+		width: 28px;
+		height: 28px;
+		float:left;
+		margin-left:12px;
+	}

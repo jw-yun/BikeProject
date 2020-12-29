@@ -15,6 +15,12 @@ public class MemberController {
 		@Autowired
 		private MemberService memberService;
 	
+		@GetMapping("memberJoinCheck")
+		public void memberJoinCheck() throws Exception{
+			
+		}
+		
+		
 		@PostMapping("memberJoin")
 		public ModelAndView setMemberJoin(MemberVO memberVO) throws Exception{
 			ModelAndView mv = new ModelAndView();
