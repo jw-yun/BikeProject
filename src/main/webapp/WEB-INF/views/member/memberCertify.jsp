@@ -5,6 +5,11 @@
 
 <head>
 	<style type="text/css">
+		.container{
+			width: 80%;
+			margin: 0 auto;
+		}
+
 		.content{
 			height:400px;
 			margin-bottom: 40px;
@@ -69,8 +74,8 @@
 			<span class="join_span">● 서울자전거 따릉이는 만14세 이상(일반회원), 만 13세로 구분하여 회원가입이 가능합니다.</span><br>
 			<span class="join_span">● 위의 사항에 동의할 경우에만 아래의 가입하기 버튼을 눌러 진행하여 주기 바랍니다.</span>
 		</div>
-	<button class="join_btn" title="13"><a>만 13세 이하<br>회원가입</a></button>
-	<button class="join_btn" title="14"><a>만 14세 이상<br>회원가입</a></button>
+		<button class="join_btn" title="13"><a>만 13세 이하<br>회원가입</a></button>
+		<button class="join_btn" title="14"><a>만 14세 이상<br>회원가입</a></button>
 	</div>
 </div>
 
@@ -82,7 +87,7 @@
 			alert("만 13세 이하는 이용할 수 없습니다.")
 			location.href="../";
 		}else{
-			location.href="";
+			location.href="./memberAgree";
 			}
 	});
 

@@ -15,6 +15,11 @@ public class MemberController {
 		@Autowired
 		private MemberService memberService;
 	
+		
+		@GetMapping("memberAgree")
+		public void memberAgree() throws Exception{
+			
+		}
 		@GetMapping("memberCertify")
 		public void memberCertify() throws Exception{
 			
