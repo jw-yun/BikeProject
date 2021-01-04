@@ -9,6 +9,12 @@ public class MemberService {
 	@Autowired
 	private MemberMapper memberMapper;
 	
+	public MemberVO getIdCheck(MemberVO memberVO) throws Exception{
+		
+		return memberMapper.getIdCheck(memberVO);
+	}
+	
+	
 	public MemberVO getMemberLogin(MemberVO memberVO) throws Exception{
 		
 		return memberMapper.getMemberLogin(memberVO);

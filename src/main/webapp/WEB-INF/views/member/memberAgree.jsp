@@ -227,7 +227,7 @@ checkall.addEventListener('click', function() {
 
 $("#next").click(function(){
 	if(checkall.checked){
-		location.href="";
+		location.href="./memberJoin";
 	}else{
 		alert("서비스이용 약관에 동의해주세요")
 	}
