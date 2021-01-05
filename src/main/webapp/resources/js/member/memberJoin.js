@@ -35,9 +35,6 @@ $("#join").click(function(){
 				$(this).focus();
 			}
 		});
-	}else if(!must1||!must2){
-		alert("필수 체크항목을 체크해주세요");
-		
 	}
 	
 });
@@ -49,42 +46,38 @@ $("#id").blur(function(){
 	var idSize =$(this).val().length;
 	if(idSize>16){
 		 $("#idResult").text("최대 16글자까지 가능합니다");
-		  $("#idResult").css("color","red");
+		 $("#idResult").css("color","red");
 	}
 	else if(idSize<4){
 		$("#idResult").text("최소 4글자 이상이어야 합니다");
-		  $("#idResult").css("color","red");
+		$("#idResult").css("color","red");
 	}else{
 		var val=$(this).val();	
-		 $("#idResult").text("");
-		 var lower =false;
-		 var num=false;
-		 for(var i=0; i<val.length;i++){
+			$("#idResult").text("");
+			var lower =false;
+			var num=false;
+			for(var i=0; i<val.length;i++){
 				var a = val.charAt(i);
-				
 				if(a>='a'&&a<='z') {
 					lower =true;
 				}else if(a>=0&&a<=9){
 					num =true;
 				}
+
 			}
-		if(lower&&num){
-			 $.post("./memberIdCheck",
-			 {id: $(this).val()},
-			 function(data){
-					
+			if(lower&&num){
+				$.post("./memberIdCheck",
+				{id: $(this).val()},
+				function(data){
 					data=data.trim();
-						
-					
-						if(data==1){
-							  $("#idResult").text("사용가능한 아이디입니다");
-							  $("#idResult").css("color","blue");
-							  idCheck=true;
-						  }else{
-							  $("#idResult").text("중복된 아이디입니다");
-							  $("#idResult").css("color","red");
-							 
-						  }
+					if(data==1){
+						$("#idResult").text("사용가능한 아이디입니다");
+						$("#idResult").css("color","blue");
+						idCheck=true;
+					}else{
+						$("#idResult").text("중복된 아이디입니다");
+						$("#idResult").css("color","red");
+					}
 					
 					
 					  
@@ -170,6 +163,8 @@ function should(){
 			shouldCheck=false;
 		}
 	});
+}
+
 //이메일 검증
 function CheckEmail(str){                                          
      var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
@@ -179,7 +174,6 @@ function CheckEmail(str){
      else {                       
           return true;         
      }                            
-}           
 }
 	//이메일 보내기
 	$("#mailSend").click(function(){
@@ -212,4 +206,4 @@ function CheckEmail(str){
 	
 	$("#cancel").click(function() {
 		   location.href="../";
-		});
+	});

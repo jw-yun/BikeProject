@@ -15,6 +15,7 @@
 	float: left;
 }
 .top2{
+	width:35%;
 	float: right;
 }
 ul{
@@ -56,6 +57,5 @@ li{
 }
 .limenu{
 	font-size: 16px;
-	font-weight: bold;
 	
 }

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
 <link href="${pageContext.request.contextPath}/resources/css/common.css" rel="stylesheet" type="text/css" >
 <link href="${pageContext.request.contextPath}/resources/css/header.css" rel="stylesheet" type="text/css">
@@ -20,10 +21,23 @@
 				
 				<div class="top top2">
 					<ul style="text-align: right;">
-						<li class="log_menu"><a href="#" class="li_text log">로그인</a></li>
-						<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberJoinCheck" class="li_text log">회원가입</a></li>
+						<c:if test="${member.auth eq 1}">
+							<li class="log_menu"><a href="#" class="li_text log">관리자모드</a></li>
+						</c:if>
+						<c:choose>
+							<c:when test="${not empty member}">
+								<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberLogout" class="li_text">로그아웃</a></li>
+								<li class="log_menu"><a href="#" class="li_text">마이페이지</a></li>						
+							</c:when>
+							<c:otherwise>
+								<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberLogin" class="li_text log">로그인</a></li>
+								<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberJoinCheck" class="li_text log">회원가입</a></li>
+							</c:otherwise>
+						</c:choose>
 						<li class="log_menu"><a href="#" class="li_text">알림</a></li>
 						<li class="log_menu"><a href="#" class="li_text">이용안내</a></li>
+
+				
 					</ul>
 				</div>
 			</div>	
