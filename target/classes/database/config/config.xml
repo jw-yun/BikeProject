@@ -7,6 +7,6 @@
 	<typeAliases>
 		
 		<typeAlias type="com.project.bike.member.MemberVO" alias="MemberVO"/>
-		
+		<typeAlias type="com.project.bike.notice.NoticeVO" alias="NoticeVO"/>
 	</typeAliases>
 </configuration>  

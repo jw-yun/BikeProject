@@ -26,6 +26,7 @@
 						</c:if>
 						<c:choose>
 							<c:when test="${not empty member}">
+								<li class="log_menu">${member.name}님</li>
 								<li class="log_menu"><a href="${pageContext.request.contextPath}/member/memberLogout" class="li_text">로그아웃</a></li>
 								<li class="log_menu"><a href="#" class="li_text">마이페이지</a></li>						
 							</c:when>
