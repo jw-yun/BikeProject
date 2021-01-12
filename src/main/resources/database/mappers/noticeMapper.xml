@@ -9,6 +9,26 @@
 		insert into NOTICE(title, contents, regDate, hit) value(#{title}, #{contents}, sysdate(), 0)
 	</insert>
 
+	<select id="getOne" resultType="NoticeVO" parameterType="NoticeVO">
+		select *
+		from NOTICE
+		where num=#{num}
+	</select>
 
+	<select id="getCount" resultType="Long" parameterType="Pager">
+		select count(num) from NOTICE where
+		title
+		like concat('%', #{search},'%')
+	</select>
+	
+	
+	<select id="getList" parameterType="Pager" resultType="NoticeVO" >
+		select *
+		from NOTICE
+		where 
+			title
+			like concat('%', #{search},'%')
+			order by num desc limit #{startRow}, #{perPage}
+	</select>
 
 </mapper>

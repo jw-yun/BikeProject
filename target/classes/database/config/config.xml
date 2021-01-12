@@ -8,5 +8,6 @@
 		
 		<typeAlias type="com.project.bike.member.MemberVO" alias="MemberVO"/>
 		<typeAlias type="com.project.bike.notice.NoticeVO" alias="NoticeVO"/>
+		<typeAlias type="com.project.bike.util.Pager" alias="Pager"/>
 	</typeAliases>
 </configuration>  
