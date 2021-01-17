@@ -56,9 +56,11 @@
    }
    
    #notice{
-		border: 1px solid #000;
-   		padding: 10px 50px;
-   		margin: 50px auto 50px;
+  	 	font-size:30px;
+  	 	font-weight:bold;
+		border: none;
+   		padding: 10px 110px;
+   		margin: 20px auto;
    		letter-spacing: 1px;
    		display: inline-block;
    }
@@ -150,6 +152,7 @@
              <%--  <input type="hidden" id="${member.auth}" class="admin"> --%>
            </form>
         </div>
+        
      </div>
   
   <table class="table ttable" style="width: 1140px;">
@@ -161,8 +164,8 @@
      <c:forEach items="${notice}" var="vo">
       <tr class="bot_line">
  <!--      	<c:set var="num" value="${pager.totalCount - ((pager.curPage-1) * 20) - vs.index}"/>  -->
-        
-        <td width="860px"><a  title="${vo.title}" class="subject">${vo.title}</a></td>
+       
+        <td width="860px"><a href="./noticeSelect?num=${vo.num}" title="${vo.title}" class="subject">${vo.title}</a></td>
 		
         <td style="text-align: center;" width="100px">${vo.regDate}</td>
       </tr>
@@ -173,7 +176,7 @@
 <div>
 <c:if test="${member.auth eq 1}">
 	<span class="btn_write">
-	<a href="./#" >글쓰기</a>
+	<a href="./noticeWrite" >글쓰기</a>
 	</span>
 </c:if>
 </div>

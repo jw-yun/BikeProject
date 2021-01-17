@@ -16,6 +16,15 @@ class noticeTest {
 	@Autowired
 	private NoticeMapper noticeMapper;
 		
+	@Test
+	void getOneTest() throws Exception{
+		NoticeVO noticeVO = new NoticeVO();
+		noticeVO.setNum(99);
+		noticeVO=noticeMapper.getOne(noticeVO);
+		assertNotNull(noticeVO);
+		}
+		
+	
 /*	@Test
 	void getListTest() throws Exception{
 		long curPage=1;

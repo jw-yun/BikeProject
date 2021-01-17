@@ -8,6 +8,9 @@ import com.project.bike.util.Pager;
 
 @Mapper
 public interface NoticeMapper {
+	public int setDelete(NoticeVO noticeVO) throws Exception;
+	
+	public NoticeVO getOne(NoticeVO noticeVO) throws Exception;
 
 	public int setInsert(NoticeVO noticeVO) throws Exception;
 	

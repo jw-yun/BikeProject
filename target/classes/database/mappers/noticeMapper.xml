@@ -5,6 +5,11 @@
 
 <mapper namespace="com.project.bike.notice.NoticeMapper">
 	
+	<delete id="setDelete" parameterType="NoticeVO">
+		delete from NOTICE where num=${num}
+	</delete>
+	
+	
 	<insert id="setInsert" parameterType="NoticeVO">
 		insert into NOTICE(title, contents, regDate, hit) value(#{title}, #{contents}, sysdate(), 0)
 	</insert>
