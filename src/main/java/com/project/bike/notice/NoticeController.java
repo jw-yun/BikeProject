@@ -18,6 +18,11 @@ public class NoticeController {
 	@Autowired
 	private NoticeService noticeService;
 	
+	@GetMapping("bike")
+	public void bike() throws Exception{
+		
+	}
+	
 	@GetMapping("noticeDelete")
 	public ModelAndView setDelete(NoticeVO noticeVO) throws Exception{
 		ModelAndView mv = new ModelAndView();

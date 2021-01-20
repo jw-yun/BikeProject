@@ -126,6 +126,11 @@
 	<div class="login_line">
 		<img alt="" src="${pageContext.request.contextPath}/resources/images/join/join_line.jpg">
 	</div>
+<div id="kakao_id_login" style="text-align: center"> <a href="${kakao_url}"> 
+카카오</a>
+</div>
+
+
 
 </div> 
 

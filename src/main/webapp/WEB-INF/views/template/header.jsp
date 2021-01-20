@@ -52,7 +52,7 @@
 			
 				<ul style="text-align: right;">
 					<li class="head_menu"><a href="#" class="li_text limenu">사업소개</a></li>
-					<li class="head_menu"><a href="#" class="li_text limenu">대여소조회</a></li>
+					<li class="head_menu"><a href="${pageContext.request.contextPath}/position/bikePosition" class="li_text limenu">대여소조회</a></li>
 					<li class="head_menu"><a href="#" class="li_text limenu">이용권 구매</a></li>
 					<li class="head_menu"><a href="#" class="li_text limenu">문의/FAQ</a></li>
 					<li class="head_menu"><a href="${pageContext.request.contextPath}/notice/noticeList" class="li_text limenu">공지사항</a></li>
